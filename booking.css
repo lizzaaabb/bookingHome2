@@ -569,6 +569,17 @@ footer{
         margin-top: 20px;
     }
 
+
+    .emails input{
+        border: 0.8px solid #fff;
+        border-radius: 1rem;
+    
+    }
+    .emails input:focus{
+        outline: none;
+        border: 0.8px solid #fff;
+        border-radius: 1rem;
+    }
     
     
     
@@ -732,6 +743,7 @@ footer{
         margin-top: 90px;
         padding-bottom: 20px;
     }
+
     
 }
 
