@@ -84,67 +84,6 @@ body{
 }
 
 
-
-/* Ensure the Flatpickr calendar container doesn't overflow */
-.flatpickr-calendar {
-    overflow: hidden; /* Hides any overflow from the calendar container */
-    max-width: 100%; /* Ensures the calendar doesn’t exceed its container width */
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
-}
-
-/* Hide overflow in month and weekday containers */
-.flatpickr-months,
-.flatpickr-days,
-.flatpickr-weekdays {
-    overflow: hidden; /* Hides any overflow */
-}
-
-/* Ensure individual day cells fit within the calendar */
-.flatpickr-day {
-    overflow: hidden; /* Hides any overflow in day cells */
-}
-
-/* Hide overflow in other Flatpickr components */
-.flatpickr-month,
-.flatpickr-year,
-.flatpickr-weekday,
-.flatpickr-time {
-    overflow: hidden; /* Hides overflow in month, year, weekday, and time views */
-}
-
-/* Ensure time picker component does not overflow */
-.flatpickr-time {
-    overflow: hidden; /* Hides any overflow in the time picker */
-}
-
-/* Hide navigation arrows and dropdowns for month and year */
-.flatpickr-prev-month,
-.flatpickr-next-month,
-.flatpickr-prev-year,
-.flatpickr-next-year,
-.flatpickr-month-select,
-.flatpickr-year-select {
-    display: none;
-}
-
-/* Hide header overflow and ensure it fits within the container */
-.flatpickr-header {
-    overflow: hidden;
-    width: 100%;
-}
-
-/* Ensure month dropdown items don't overflow */
-.flatpickr-monthDropdown-months {
-    overflow: hidden;
-    max-height: 200px; /* Adjust the height as needed */
-    overflow-y: auto; /* Enable scrolling if necessary */
-}
-
-/* Additional styling for clarity and consistency */
-.flatpickr-months {
-    box-sizing: border-box;
-}
-
 .form1{
     display: flex;
     align-items: flex-start;
@@ -417,6 +356,11 @@ footer{
     outline: none; /* Removes the default focus outline */
     border: 0.8px solid var(--secondary-color); /* Keeps the border the same as the non-focused state */
 }
+
+
+
+
+
 
 
 @media (max-width: 430px) {
