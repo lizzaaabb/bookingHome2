@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/boowie" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
 
 <body>
     <nav class="navbar">
@@ -48,9 +49,9 @@
                 <div class="check">
                     <div class="checkinout">
     
-                       <input type="text" id="checkIn" name="checkIn" placeholder="Check-In" required>
+                       <input type="text" id="checkIn" name="checkIn" placeholder="Check-In" required autocomplete="off">
     
-                       <input type="text" id="checkOut" name="checkOut" placeholder="Check-Out" required>
+                       <input type="text" id="checkOut" name="checkOut" placeholder="Check-Out" required autocomplete="off">
                     </div>
     
                     <div class="guests">
@@ -161,6 +162,9 @@
 
      <!-- EmailJS JS -->
      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+     
+
+     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
      
 
      

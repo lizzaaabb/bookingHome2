@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (emailForm) {
         emailForm.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent default form submission
+
             // Collect email form data
             const formData = new FormData(emailForm);
             const data = {};
@@ -72,4 +73,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         });
     }
+
+    // Initialize Pikaday for date inputs
+    const pickerCheckIn = new Pikaday({
+        field: document.getElementById('checkIn'),
+        format: 'YYYY-MM-DD',
+        minDate: new Date(), // Prevent past dates
+        onSelect: function(date) {
+            // Update check-out minDate when check-in is selected
+            pickerCheckOut.setMinDate(date);
+        }
+    });
+
+    const pickerCheckOut = new Pikaday({
+        field: document.getElementById('checkOut'),
+        format: 'YYYY-MM-DD',
+        minDate: new Date(), // Prevent past dates
+        maxDate: new Date(new Date().setFullYear(new Date().getFullYear() + 1)) // Allow dates up to 1 year in the future
+    });
+
+    // Update check-out maxDate when check-in is selected
+    pickerCheckIn.on('change', function(date) {
+        pickerCheckOut.setMinDate(date);
+        pickerCheckOut.setMaxDate(new Date(date.getFullYear() + 1, date.getMonth(), date.getDate()));
+    });
 });

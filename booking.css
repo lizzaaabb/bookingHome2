@@ -102,6 +102,9 @@ form{
     flex-direction: row;
     gap: 5px;
 }
+.check input{
+    cursor: pointer;
+}
 .emails{
     display: flex;
     align-items: flex-start;
@@ -788,8 +791,8 @@ footer{
 
 @media (max-width: 400px) {
     .custom-alert {
-        width: 95%;
-        max-width: 95%;
+        width: 65%;
+        max-width: 65%;
         padding: 10px;
     }
 
