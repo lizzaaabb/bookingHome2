@@ -194,11 +194,10 @@ form{
 .checkinout input{
     height: 60px;
     line-height: 70px;
-    border: none;
     padding: 0px 10px;
     font-size: 16px;
     color: var(--secondary-color);
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'BOOWIE', sans-serif;
     background: transparent;
     border: 0.8px solid #fff;
@@ -561,14 +560,6 @@ footer{
         margin-top: 90px;
         padding-bottom: 20px;
     }
-    input[type="text"] {
-        font-size: 14px; /* Smaller font size for smaller screens */
-        padding: 8px;
-        color: var(--secondary-color);
-    }
-    .checkinout {
-        overflow: visible; /* Ensure overflow is not cutting off the placeholders */
-    }
 
     .footer-container {
         flex-direction: column; /* Stack items vertically on small screens */
@@ -630,17 +621,6 @@ footer{
         margin-top: 20px;
     }
 
-    input::placeholder {
-        color: #b3b3b3; /* Light grey color for visibility */
-        opacity: 1; /* Ensures full visibility of the placeholder text */
-        font-family: 'BOOWIE', sans-serif; /* Consistent font styling */
-        font-size: 12px; /* Adjust size for clarity */
-    }
-    
-    /* For focus state, keep placeholder styling consistent */
-    input:focus::placeholder {
-        color: #b3b3b3; /* Same color as non-focused state */
-    }
     
     
 }
@@ -713,13 +693,11 @@ footer{
     .checkinout input{
         height: 45px;
         line-height: 55px;
-        border: none;
         padding: 0px 10px;
         font-size: 12px;
-        color: var(--secondary-color);
-        font-weight: 300;
+        color: var(--primary-color);
+        font-weight: 400;
         font-family: 'BOOWIE', sans-serif;
-        background: transparent;
         border: 0.8px solid #fff;
         border-radius: 1rem;
         width: 90px;
