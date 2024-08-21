@@ -250,11 +250,6 @@ form{
 
 
 footer{
-    background-color: black; /* Base color for the section */
-    background-image: 
-        url(pics/noise.svg); /* Your SVG noise texture */
-    background-size: cover; /* Adjust as needed */
-    background-blend-mode:luminosity;
     padding-top: 70px;
     padding-bottom: 20px;
     margin-left: auto;
