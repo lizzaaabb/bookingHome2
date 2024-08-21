@@ -98,6 +98,16 @@ document.addEventListener('DOMContentLoaded', function() {
         pickerCheckOut.setMaxDate(new Date(date.getFullYear() + 1, date.getMonth(), date.getDate()));
     });
 
+    // Prevent default behavior on touchstart to hide the virtual keyboard
+    function preventKeyboard(event) {
+        event.preventDefault();
+    }
+
+    const inputs = document.querySelectorAll('input[type="text"]');
+    inputs.forEach(input => {
+        input.addEventListener('touchstart', preventKeyboard, { passive: false });
+    });
+
     // Set readonly attribute to prevent direct input
     document.getElementById('checkIn').setAttribute('readonly', true);
     document.getElementById('checkOut').setAttribute('readonly', true);
