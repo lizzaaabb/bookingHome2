@@ -97,4 +97,8 @@ document.addEventListener('DOMContentLoaded', function() {
         pickerCheckOut.setMinDate(date);
         pickerCheckOut.setMaxDate(new Date(date.getFullYear() + 1, date.getMonth(), date.getDate()));
     });
+
+    // Set readonly attribute to prevent direct input
+    document.getElementById('checkIn').setAttribute('readonly', true);
+    document.getElementById('checkOut').setAttribute('readonly', true);
 });

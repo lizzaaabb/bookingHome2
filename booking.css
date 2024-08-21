@@ -417,14 +417,14 @@ footer{
         line-height: 55px;
         border: none;
         padding: 0px 10px;
-        font-size: 12px;
+        font-size: 10px;
         color: var(--secondary-color);
         font-weight: 300;
         font-family: 'BOOWIE', sans-serif;
         background: transparent;
         border: 0.8px solid #fff;
         border-radius: 1rem;
-        width: 90px;
+        width: 120px !important;
     
     }
     #guests{
@@ -439,7 +439,7 @@ footer{
         background: transparent;
         border: 0.8px solid #fff;
         border-radius: 1rem;
-        width: 120px;
+        width: 90px;
 
     }
     .formbtn button{
@@ -531,7 +531,7 @@ footer{
     }
 
     .inputcontainer input, .inputbtn {
-        width: 80%; /* Full width for input and button */
+        width: 85%; /* Full width for input and button */
         padding: 10px 15px;
     }
 
