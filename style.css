@@ -4,6 +4,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #000000;
