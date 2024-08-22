@@ -118,6 +118,6 @@ document.addEventListener('DOMContentLoaded', function() {
     AOS.init({
         duration: 1000, // Duration of the animation in milliseconds
         easing: 'ease-in-out', // Easing function
-        
+        once: true
     });
 });
