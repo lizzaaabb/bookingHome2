@@ -4,6 +4,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     background-color: black; /* Base color for the section */
@@ -256,6 +257,7 @@ footer{
     margin-right: auto;
     width: 100%;
     border-top: 0.5px solid #d3d3d38f;
+    margin-top: 20px;
 
 }
 .footer-container{
@@ -355,11 +357,92 @@ footer{
     outline: none; /* Removes the default focus outline */
     border: 0.8px solid var(--secondary-color); /* Keeps the border the same as the non-focused state */
 }
+.pricing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--primary-color);
+    margin-top: -55px;
+    margin-bottom: 70px;
+}
+.pricing-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.pricingtitle{
+    font-family: Boowie;
+    font-size: 54px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+.pricingspan{
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    letter-spacing: .02em;
+}
+.pricing-container{
+    width: 37%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.pricing-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #d3d3d38f;
+}
+.pricehead{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+.pricedate{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+.euro{
+    font-size: 24px;
+}
+.night{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: var(--secondary-color);
 
-
-
-
-
+}
+.pricingbtn{
+    padding: 20px;
+    padding-top: 35px;
+}
+.book{
+    padding: 14px 18px;
+    border-radius: 1rem;
+    color: #fff;
+    background: transparent;
+    width: 140px;
+    border: 0.8px solid var(--secondary-color) ;
+    font-family: 'BOOWIE', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.pricingbtn a{
+    text-decoration: none;
+}
 
 
 @media (max-width: 430px) {
@@ -576,6 +659,29 @@ footer{
         border: 0.8px solid #fff !important;
         border-radius: 1rem;
     }
+
+
+    .pricingtitle{
+        font-size: 44px;
+    }
+    .pricingspan{
+        color: var(--secondary-color);
+        font-size: 1rem;
+        letter-spacing: .02em;
+    }
+    .pricehead{
+        font-size: 17px;
+    }
+    .pricedate{
+        font-size: 12px;
+    }
+    .euro{
+        font-size: 20px;
+    }
+    .night{
+        font-size: 12px;
+    
+    }
     
     
     
@@ -738,6 +844,9 @@ footer{
     .main-right{
         margin-top: 90px;
         padding-bottom: 20px;
+    }
+    .pricing-container{
+        width: 95%;
     }
 
     
